@@ -6,18 +6,40 @@ using UnityEngine;
 public class failToClearScreen : MonoBehaviour
 {
     public Texture dvdLogo;
+    public Texture startingImage;
     RenderTexture rt;
     Material mat;
     public Shader shader;
     public Vector2 newDrawPosition;
-    // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
         rt = RenderTexture.GetTemporary(1600, 900);
         mat = new Material(shader);
         mat.SetFloat("_Size", 0.3f);
-        GetComponent<MeshRenderer>().material = new Material( Shader.Find("Standard"));
-        GetComponent<MeshRenderer>().material.SetTexture("_MainTex", rt);
+        OnEnable();
+    }
+    private void OnDisable()
+    {
+        OnEnable();
+    }
+    void OnEnable()
+    {
+        Graphics.Blit(startingImage, rt);
+
+        //for some reason unity needs all this to trigger the material to be transparent.
+        var surfaceMat= new Material(Shader.Find("Standard"));
+        surfaceMat.SetTexture("_MainTex", rt);
+        surfaceMat.SetFloat("_Mode", 1f);
+        surfaceMat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
+        surfaceMat.SetInt("_DstBlend", (int)UnityEngine.Rendering.BlendMode.OneMinusSrcAlpha);
+        surfaceMat.SetInt("_ZWrite", 0);
+        surfaceMat.DisableKeyword("_ALPHATEST_ON");
+        surfaceMat.EnableKeyword("_ALPHABLEND_ON");
+        surfaceMat.DisableKeyword("_ALPHAPREMULTIPLY_ON");
+        surfaceMat.renderQueue = 3000;
+
+
+        GetComponent<MeshRenderer>().material = surfaceMat;
     }
 
     // Update is called once per frame
