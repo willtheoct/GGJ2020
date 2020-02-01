@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-    public class StartinSafeMode: MonoBehaviour
+public class StartinSafeMode : MonoBehaviour
+{
+    public GameObject WindowsScreen;
+    public GameObject StartUpSettings;
+    public GameObject ZoomOutToMontior;
+    void Update()
     {
-        public GameObject WindowsScreen;
-        public GameObject startinSafeMode;
-        void Update()
-        {
-        }
-        void OnMouseDown()
-        {
-            startinSafeMode.SetActive(false);
-            WindowsScreen.SetActive(true);
-        }
+        
     }
+    void OnMouseDown()
+    {
+        StartUpSettings.SetActive(false);
+        WindowsScreen.SetActive(true);
+        ZoomOutToMontior.SetActive(true);
+    }
+}

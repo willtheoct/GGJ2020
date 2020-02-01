@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class Restart : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+    public GameObject TitleScreen;
+    public GameObject StartupSettings;
     void Update()
     {
-        
+    }
+    void OnMouseDown()
+    {
+        TitleScreen.SetActive(true);
+        StartupSettings.SetActive(false);
     }
 }
