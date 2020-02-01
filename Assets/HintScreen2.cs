@@ -10,7 +10,7 @@ public class HintScreen2 : MonoBehaviour
     public GameObject CodeDigit2;
     void Update()
     {
-        if (Input.GetKeyDown("7"))
+        if (Input.GetKeyDown("5"))
         {
             HintScreen2screen.SetActive(false);
             StartOptions.SetActive(true);

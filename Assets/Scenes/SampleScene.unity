@@ -229,7 +229,7 @@ MonoBehaviour:
   HintScreen2screen: {fileID: 16075430}
   StartOptions: {fileID: 632102727}
   StartButton2: {fileID: 2082350583}
-  CodeDigit2: {fileID: 0}
+  CodeDigit2: {fileID: 968277934}
 --- !u!1 &103892935
 GameObject:
   m_ObjectHideFlags: 0
@@ -447,6 +447,7 @@ MonoBehaviour:
   HintScreen3screen: {fileID: 263208942}
   StartOptions: {fileID: 632102727}
   HintButton3: {fileID: 983922506}
+  CodeDigit3: {fileID: 1299739820}
 --- !u!1 &409934925
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +661,7 @@ GameObject:
   - component: {fileID: 632102730}
   - component: {fileID: 632102729}
   - component: {fileID: 632102728}
+  - component: {fileID: 632102732}
   m_Layer: 0
   m_Name: StartupSettings
   m_TagString: Untagged
@@ -753,6 +755,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &632102732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 632102727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e50e2cbe0812fad4b819468e3885737c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CodeDigit1: {fileID: 1435418581}
+  CodeDigit2: {fileID: 968277934}
+  CodeDigit3: {fileID: 1299739820}
+  CodeDigit4: {fileID: 1324904126}
+  StartInSafeModeButton: {fileID: 2106546178}
 --- !u!1 &692996622
 GameObject:
   m_ObjectHideFlags: 0
@@ -1779,6 +1798,7 @@ GameObject:
   - component: {fileID: 1200914128}
   - component: {fileID: 1200914127}
   - component: {fileID: 1200914126}
+  - component: {fileID: 1200914129}
   m_Layer: 0
   m_Name: Hint Button 4
   m_TagString: Untagged
@@ -1860,6 +1880,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1200914124}
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1200914129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1200914124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82f37f72cc2124046b2a8add2bb1f6f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StartOptions: {fileID: 632102727}
+  HintScreen4: {fileID: 1206930341}
 --- !u!1 &1202954936
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,7 +2110,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HintScreen4screen: {fileID: 1206930341}
   StartOptions: {fileID: 632102727}
-  HintButton4: {fileID: 1206930341}
+  HintButton4: {fileID: 1200914124}
+  CodeDigit4: {fileID: 1324904126}
 --- !u!1 &1231180881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2480,7 +2515,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94947af142de1cd4eb8072fee92bc5b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CodeDigit1display: {fileID: 1435418581}
 --- !u!64 &1435418583
 MeshCollider:
   m_ObjectHideFlags: 0

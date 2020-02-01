@@ -10,7 +10,7 @@ public class HintScreen3 : MonoBehaviour
     public GameObject CodeDigit3;
     void Update()
     {
-        if (Input.GetKeyDown("7"))
+        if (Input.GetKeyDown("4"))
         {
             HintScreen3screen.SetActive(false);
             StartOptions.SetActive(true);
