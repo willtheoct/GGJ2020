@@ -6,6 +6,7 @@ public class FlySwatter : MonoBehaviour
 {
     bool isPickedUp = false;
     public float ArmLength = 1f;
+    public Transform ShouldBeAbleToReach;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +29,8 @@ public class FlySwatter : MonoBehaviour
         if (isPickedUp)
         {
             transform.LookAt(Vector3.forward, Vector3.up);
+            ArmLength = (ShouldBeAbleToReach.position - Camera.main.transform.position).magnitude;
+            
             transform.position = Camera.main.ScreenPointToRay(Input.mousePosition).direction*ArmLength+
                                  Camera.main.transform.position;
         }
