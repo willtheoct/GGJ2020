@@ -11,7 +11,7 @@ public class HintScreen4 : MonoBehaviour
     public GameObject ErrorMsg;
     void Update()
     {
-        if (Input.GetKeyDown("3"))
+        if (Input.GetKeyDown("5"))
         {
             HintScreen4screen.SetActive(false);
             StartOptions.SetActive(true);

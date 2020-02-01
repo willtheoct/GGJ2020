@@ -6,6 +6,7 @@ public class Restart : MonoBehaviour
 {
     public GameObject TitleScreen;
     public GameObject StartupSettings;
+    public GameObject RestartButton;
     void Update()
     {
     }
@@ -13,5 +14,6 @@ public class Restart : MonoBehaviour
     {
         TitleScreen.SetActive(true);
         StartupSettings.SetActive(false);
+        RestartButton.SetActive(false);
     }
 }
