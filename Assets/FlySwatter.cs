@@ -21,6 +21,7 @@ public class FlySwatter : MonoBehaviour
             isPickedUp = false;
             transform.LookAt(Vector3.down, Vector3.forward);
             GetComponent<Rigidbody>().isKinematic = false;
+            the.playersHandIsFull = false;
         }
 
         //if still being held, point it forward
@@ -33,7 +34,17 @@ public class FlySwatter : MonoBehaviour
     }
     void OnMouseDown()
     {
-        isPickedUp = true;
-        GetComponent<Rigidbody>().isKinematic = true;
+        if (!the.playersHandIsFull)
+        {
+            the.playersHandIsFull = true;
+            isPickedUp = true;
+            GetComponent<Rigidbody>().isKinematic = true;
+        }
+        
     }
+}
+
+public static class the
+{
+    public static bool playersHandIsFull=false;
 }

@@ -9,7 +9,7 @@ public class Smudge : MonoBehaviour
     private void OnMouseOver()
     {
         //if the mouse has moved and the mouse button is down
-        if (Input.mousePosition != lastMousePosition && Input.GetMouseButton(0))
+        if (Input.mousePosition != lastMousePosition && Input.GetMouseButton(0) &&! the.playersHandIsFull)
         {
             HitPoints -= Time.deltaTime;
             if (HitPoints <= 0f)
