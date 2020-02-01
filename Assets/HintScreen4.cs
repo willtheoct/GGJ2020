@@ -8,6 +8,7 @@ public class HintScreen4 : MonoBehaviour
     public GameObject StartOptions;
     public GameObject HintButton4;
     public GameObject CodeDigit4;
+    public GameObject ErrorMsg;
     void Update()
     {
         if (Input.GetKeyDown("3"))
@@ -16,6 +17,7 @@ public class HintScreen4 : MonoBehaviour
             StartOptions.SetActive(true);
             HintButton4.SetActive(false);
             CodeDigit4.SetActive(true);
+            ErrorMsg.SetActive(false);
         }
     }
 }
