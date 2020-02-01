@@ -11,7 +11,7 @@ public class MoveCameraMonitor : MonoBehaviour
     {
         if ((MainCamera.transform.position - Screen.transform.position).magnitude < maxdistance)
         {
-            MainCamera.transform.Translate(-Vector3.forward * Time.deltaTime);
+            MainCamera.transform.Translate(-Vector3.forward * Time.deltaTime / 50);
         }
     }
 }

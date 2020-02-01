@@ -1814,7 +1814,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 963194225}
   Screen: {fileID: 36207975}
-  maxdistance: 0.48
+  maxdistance: 0.496
 --- !u!4 &1004408928
 Transform:
   m_ObjectHideFlags: 0
