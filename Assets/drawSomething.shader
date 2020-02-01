@@ -48,7 +48,7 @@
                 if(i.uv.y > _Center.y - _Size)
                 if(i.uv.x < _Center.x + _Size)
                 if(i.uv.y < _Center.y + _Size)
-                return tex2D(_MainTex, (i.uv-_Center.xy)/_Size);
+                return tex2D(_MainTex, (i.uv-_Center.xy)/_Size/2+0.5);
                 discard;
                 return fixed4(0,0,0,0);
             }
