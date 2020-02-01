@@ -7,6 +7,7 @@ public class StartinSafeMode : MonoBehaviour
     public GameObject WindowsScreen;
     public GameObject StartUpSettings;
     public GameObject ZoomOutToMontior;
+    public GameObject PowerButton;
     void Update()
     {
         
@@ -16,5 +17,6 @@ public class StartinSafeMode : MonoBehaviour
         StartUpSettings.SetActive(false);
         WindowsScreen.SetActive(true);
         ZoomOutToMontior.SetActive(true);
+        PowerButton.SetActive(true);
     }
 }
