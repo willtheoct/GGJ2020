@@ -20,7 +20,6 @@ public class FlySwatter : MonoBehaviour
         if (!Input.GetMouseButton(0) && isPickedUp)
         {
             isPickedUp = false;
-            transform.LookAt(Vector3.down, Vector3.forward);
             GetComponent<Rigidbody>().isKinematic = false;
             the.playersHandIsFull = false;
         }
