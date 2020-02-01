@@ -5,7 +5,7 @@ using UnityEngine;
 public class FlySwatter : MonoBehaviour
 {
     bool isPickedUp = false;
-    public float ArmLength = 0.1f;
+    public float ArmLength = 1f;
     // Start is called before the first frame update
     void Start()
     {
