@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Smudge : MonoBehaviour
 {
-    public float HitPoints=3f;
+    public float HitPoints = 3f;
     Vector3 lastMousePosition;
+    float startHP;
+    void Start()
+    {
+        startHP = HitPoints;
+    }
     private void OnMouseOver()
     {
         //if the mouse has moved and the mouse button is down
@@ -16,6 +21,7 @@ public class Smudge : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+            GetComponent<MeshRenderer>().material.color = new Color(1f, 1f, 1f, HitPoints/startHP);
         }
         lastMousePosition = Input.mousePosition;
     }
