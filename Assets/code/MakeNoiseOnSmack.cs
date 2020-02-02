@@ -7,7 +7,7 @@ public class MakeNoiseOnSmack : MonoBehaviour
 {
     Rigidbody rb;
     static int bottleNoises;
-    public float noiseTimeLeft = 0f;
+    float noiseTimeLeft = 2f;
     bool ReadyForNoise = true;
     // Start is called before the first frame update
     void Start()
@@ -32,7 +32,7 @@ public class MakeNoiseOnSmack : MonoBehaviour
 
     void OnCollisionEnter(Collision c)
     {
-        if (c.relativeVelocity.magnitude > 2f && ReadyForNoise && bottleNoises<6 && Time.timeSinceLevelLoad>3f)
+        if (c.relativeVelocity.magnitude > 0.5f && ReadyForNoise && bottleNoises<6 && Time.timeSinceLevelLoad>3f)
         {
             noiseTimeLeft = 2f;
             bottleNoises++;
