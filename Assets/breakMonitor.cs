@@ -7,6 +7,9 @@ public class breakMonitor : MonoBehaviour
     public GameObject MonitorAndStand;
     void Start()
     {
-        MonitorAndStand.GetComponent<Rigidbody>().isKinematic = false;
+        var rb = MonitorAndStand.GetComponent<Rigidbody>();
+        rb.isKinematic = false;
+        rb.AddForce(Vector3.up);
+
     }
 }

@@ -30,7 +30,7 @@ public class StandHolder : MonoBehaviour
                 return;
             }
 
-            if (c.gameObject == Monitor || c.transform.IsChildOf(Monitor.transform))
+            if ((c.gameObject == Monitor || c.transform.IsChildOf(Monitor.transform)) && glued)
             {
                 Monitor.transform.position = MonitorStartPos;
                 Monitor.transform.eulerAngles = MonitorStartRotation;
