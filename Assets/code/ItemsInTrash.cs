@@ -6,7 +6,7 @@ public class ItemsInTrash : MonoBehaviour
 {
     void OnTriggerEnter(Collider C)
     {
-        if (C.GetComponent<Bottle>() != null)
+        if (C.GetComponent<MakeNoiseOnSmack>() != null)
         {
             C.transform.parent = transform;
             if (transform.childCount > 10)
