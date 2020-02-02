@@ -15,7 +15,7 @@ public class failToClearScreen : MonoBehaviour
     {
         rt = RenderTexture.GetTemporary(1600, 900);
         mat = new Material(shader);
-        mat.SetFloat("_Size", 0.3f);
+        mat.SetFloat("_Size", 0.2f);
         OnEnable();
     }
     private void OnDisable()
