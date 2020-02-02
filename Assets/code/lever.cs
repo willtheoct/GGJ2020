@@ -19,6 +19,7 @@ public class lever : MonoBehaviour
             if (Random.value > 0.2f)
             {
                 isPullingDown = true;
+                GetComponent<AudioSource>().Play();
             }
             else
             {
