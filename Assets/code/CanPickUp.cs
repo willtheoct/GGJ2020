@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FlySwatter : MonoBehaviour
+public class CanPickUp : MonoBehaviour
 {
     bool isPickedUp = false;
     public float ArmLength = 1f;
@@ -45,4 +45,9 @@ public class FlySwatter : MonoBehaviour
         }
         
     }
+}
+
+public static class the
+{
+    public static bool playersHandIsFull=false;
 }
