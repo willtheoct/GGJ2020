@@ -9,6 +9,10 @@ public class ItemsInTrash : MonoBehaviour
         if (C.GetComponent<Bottle>() != null)
         {
             C.transform.parent = transform;
+            if (transform.childCount > 10)
+            {
+
+            }
         }
     }
 }
