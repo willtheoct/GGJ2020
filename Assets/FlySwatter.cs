@@ -20,7 +20,7 @@ public class FlySwatter : MonoBehaviour
         if (!Input.GetMouseButton(0) && isPickedUp)
         {
             isPickedUp = false;
-            GetComponent<Rigidbody>().isKinematic = false;
+            GetComponent<Rigidbody>().useGravity = true;
             the.playersHandIsFull = false;
         }
 
@@ -30,8 +30,9 @@ public class FlySwatter : MonoBehaviour
             transform.LookAt(Vector3.forward, Vector3.up);
             ArmLength = (ShouldBeAbleToReach.position - Camera.main.transform.position).magnitude;
             
-            transform.position = Camera.main.ScreenPointToRay(Input.mousePosition).direction*ArmLength+
+            var targetPosition = Camera.main.ScreenPointToRay(Input.mousePosition).direction*ArmLength+
                                  Camera.main.transform.position;
+            GetComponent<Rigidbody>().MovePosition(targetPosition);
         }
     }
     void OnMouseDown()
@@ -40,7 +41,7 @@ public class FlySwatter : MonoBehaviour
         {
             the.playersHandIsFull = true;
             isPickedUp = true;
-            GetComponent<Rigidbody>().isKinematic = true;
+            GetComponent<Rigidbody>().useGravity = false;
         }
         
     }

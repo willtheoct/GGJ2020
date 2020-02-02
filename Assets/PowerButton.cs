@@ -4,16 +4,10 @@ using UnityEngine;
 
 public class PowerButton : MonoBehaviour
 {
-    public GameObject PowerButtonHide;
-    public GameObject BlackScreen;
-    public GameObject WindowsScreen;
-    public GameObject Smudge1;
-
+    public GameObject screen;
     void OnMouseDown()
     {
-        PowerButtonHide.SetActive(false);
-        BlackScreen.SetActive(false);
-        WindowsScreen.SetActive(true);
-        Smudge1.SetActive(true);
+        screen.SetActive(!screen.activeSelf);
     }
+    
 }
