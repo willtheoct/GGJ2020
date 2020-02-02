@@ -27,7 +27,7 @@ public class CanPickUp : MonoBehaviour
         //if still being held, point it forward
         if (isPickedUp)
         {
-            transform.LookAt(Vector3.forward, Vector3.up);
+            if(ShouldBeAbleToReach!=null)
             ArmLength = (ShouldBeAbleToReach.position - Camera.main.transform.position).magnitude;
             
             var targetPosition = Camera.main.ScreenPointToRay(Input.mousePosition).direction*ArmLength+
@@ -42,6 +42,10 @@ public class CanPickUp : MonoBehaviour
             the.playersHandIsFull = true;
             isPickedUp = true;
             GetComponent<Rigidbody>().useGravity = false;
+            if (ShouldBeAbleToReach == null)
+            {
+                ArmLength = (Camera.main.transform.position - transform.position).magnitude;
+            }
         }
         
     }
