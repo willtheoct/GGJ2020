@@ -17,11 +17,11 @@ public class Smudge : MonoBehaviour
         if (Input.mousePosition != lastMousePosition && Input.GetMouseButton(0) &&! the.playersHandIsFull)
         {
             HitPoints -= Time.deltaTime;
-            if (HitPoints <= 0f)
+            if (HitPoints <= 0.3f)
             {
                 Destroy(gameObject);
             }
-            GetComponent<MeshRenderer>().material.color = new Color(1f, 1f, 1f, HitPoints/(startHP-2.5f));
+            GetComponent<MeshRenderer>().material.color = new Color(1f, 1f, 1f, HitPoints/startHP);
         }
         lastMousePosition = Input.mousePosition;
     }
