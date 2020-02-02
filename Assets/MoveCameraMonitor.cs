@@ -7,11 +7,12 @@ public class MoveCameraMonitor : MonoBehaviour
     public GameObject MainCamera;
     public GameObject Screen;
     public float maxdistance = 1F;
+    public float ZoomSpeed = 0.02F;
     void Update()
     {
         if ((MainCamera.transform.position - Screen.transform.position).magnitude < maxdistance)
         {
-            MainCamera.transform.Translate(-Vector3.forward * Time.deltaTime / 50);
+            MainCamera.transform.Translate(-Vector3.forward * Time.deltaTime * ZoomSpeed);
         }
     }
 }
