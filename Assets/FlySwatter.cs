@@ -32,7 +32,7 @@ public class FlySwatter : MonoBehaviour
             
             var targetPosition = Camera.main.ScreenPointToRay(Input.mousePosition).direction*ArmLength+
                                  Camera.main.transform.position;
-            GetComponent<Rigidbody>().MovePosition(targetPosition);
+            GetComponent<Rigidbody>().velocity=(targetPosition-transform.position)*5f;
         }
     }
     void OnMouseDown()
