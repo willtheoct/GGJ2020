@@ -6030,10 +6030,10 @@ MonoBehaviour:
   - {fileID: 1004408926}
   - {fileID: 620070120}
   - {fileID: 1153556604}
+  - {fileID: 378055589}
   mindistance: 0.46
   ZoomSpeed: 0.5
   victoryScreen: {fileID: 1572568937}
-  Computer: {fileID: 718395644}
 --- !u!1 &1086513487
 GameObject:
   m_ObjectHideFlags: 0
