@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript1 : MonoBehaviour
+public class Esctoplaymenu : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetButtonDown("f12"))
+        if (Input.GetKeyDown(KeyCode.F12))
         {
-            Application.LoadLevel("SampleScene");
+            Application.LoadLevel(Application.loadedLevel);
         }
     }
 }
