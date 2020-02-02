@@ -21,7 +21,7 @@ public class Smudge : MonoBehaviour
             {
                 Destroy(gameObject);
             }
-            GetComponent<MeshRenderer>().material.color = new Color(1f, 1f, 1f, HitPoints/startHP);
+            GetComponent<MeshRenderer>().material.color = new Color(1f, 1f, 1f, HitPoints/(startHP-2.5f));
         }
         lastMousePosition = Input.mousePosition;
     }
