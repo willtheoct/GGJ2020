@@ -988,6 +988,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &378055589
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 378055590}
+  - component: {fileID: 378055591}
+  m_Layer: 0
+  m_Name: RandomlyBugTheScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &378055590
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378055589}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 620070122}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &378055591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378055589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48e344d75c839f043aa3427c4456d49f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pc: {fileID: 718395644}
 --- !u!1001 &387437574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1429,7 +1473,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.3, y: 3.73, z: -0.284}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 378055590}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1751,6 +1796,7 @@ GameObject:
   - component: {fileID: 718395642}
   - component: {fileID: 718395641}
   - component: {fileID: 718395640}
+  - component: {fileID: 718395644}
   m_Layer: 0
   m_Name: DesktopPC
   m_TagString: Untagged
@@ -1831,6 +1877,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718395644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718395639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d20a9b81f39c35499420540acdfecff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bug: {fileID: 1202770407}
 --- !u!1 &837422201
 GameObject:
   m_ObjectHideFlags: 0
@@ -3107,6 +3166,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StartOptions: {fileID: 632102727}
   HintScreen4: {fileID: 1206930341}
+--- !u!1 &1202770407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3962768883866952885, guid: ec252d490798a374eb2f7642b9a605af,
+    type: 3}
+  m_PrefabInstance: {fileID: 387437574}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1202954936
 GameObject:
   m_ObjectHideFlags: 0
