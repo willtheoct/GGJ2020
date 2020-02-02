@@ -10806,6 +10806,16 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 6405165405533287750, guid: c5cd4d8dc4d14c34883658251fc3c209,
+        type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6405165405533287750, guid: c5cd4d8dc4d14c34883658251fc3c209,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c34a49f64d681d54ba90827623964379, type: 3}
     m_RemovedComponents:
     - {fileID: 7280891327364880729, guid: c5cd4d8dc4d14c34883658251fc3c209, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c5cd4d8dc4d14c34883658251fc3c209, type: 3}
