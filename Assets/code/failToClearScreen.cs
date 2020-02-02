@@ -15,7 +15,7 @@ public class failToClearScreen : MonoBehaviour
     {
         rt = RenderTexture.GetTemporary(1600, 900);
         mat = new Material(shader);
-        mat.SetFloat("_Size", 0.2f);
+        mat.SetFloat("_Size", 0.3f);
         OnEnable();
     }
     private void OnDisable()
@@ -28,6 +28,9 @@ public class failToClearScreen : MonoBehaviour
 
         //for some reason unity needs all this to trigger the material to be transparent.
         var surfaceMat= new Material(Shader.Find("Standard"));
+        surfaceMat.SetFloat("_SpecularHighlights", 0f);
+        surfaceMat.SetFloat("_GlossyReflections", 0f);
+        surfaceMat.SetFloat("_Glossiness", 0f);
         surfaceMat.SetTexture("_MainTex", rt);
         surfaceMat.SetFloat("_Mode", 1f);
         surfaceMat.SetInt("_SrcBlend", (int)UnityEngine.Rendering.BlendMode.SrcAlpha);
@@ -45,9 +48,12 @@ public class failToClearScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        newDrawPosition.x = Mathf.Abs( Mathf.Sin(Time.time));
-        newDrawPosition.y = Mathf.Abs( Mathf.Sin(Time.time+0.5f));
+        newDrawPosition.x += Random.Range(-1f, 1f) * Time.deltaTime;
+        newDrawPosition.y +=Random.Range(-1f,1f)*Time.deltaTime;
+        newDrawPosition.x = (newDrawPosition.x + 0.5f) % 2f;
+        newDrawPosition.y = (newDrawPosition.y + 0.5f) % 2f;
         mat.SetVector("_Center", new Vector4(newDrawPosition.x,newDrawPosition.y));
+
 
         Graphics.Blit(dvdLogo, rt,mat);
     }

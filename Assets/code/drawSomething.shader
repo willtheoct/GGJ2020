@@ -42,8 +42,8 @@
 
             sampler2D _MainTex;
 
-            fixed4 frag (v2f i) : SV_Target
-            {
+			fixed4 frag(v2f i) : SV_Target
+			{
                 if(i.uv.x > _Center.x - _Size)
                 if(i.uv.y > _Center.y - _Size)
                 if(i.uv.x < _Center.x + _Size)
