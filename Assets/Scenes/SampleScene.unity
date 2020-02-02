@@ -6033,6 +6033,7 @@ MonoBehaviour:
   mindistance: 0.46
   ZoomSpeed: 0.5
   victoryScreen: {fileID: 1572568937}
+  Computer: {fileID: 718395644}
 --- !u!1 &1086513487
 GameObject:
   m_ObjectHideFlags: 0

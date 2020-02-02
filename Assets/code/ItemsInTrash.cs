@@ -12,6 +12,7 @@ public class ItemsInTrash : MonoBehaviour
     public float mindistance = 1F;
     public float ZoomSpeed = 0.02F;
     public GameObject victoryScreen;
+    public computer Computer;
 
     List<Rigidbody> trash=new List<Rigidbody>();
     void OnTriggerEnter(Collider C)
@@ -26,6 +27,7 @@ public class ItemsInTrash : MonoBehaviour
     {
         if (trash.Count > 3 && !Bug.activeSelf && Monitor.GetComponent<Rigidbody>().isKinematic && Screen.activeSelf)
         {
+            Computer.enabled = false;
             victoryScreen.SetActive(true);
             if ((MainCamera.transform.position - Screen.transform.position).magnitude > mindistance)
             {
