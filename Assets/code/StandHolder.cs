@@ -29,7 +29,12 @@ public class StandHolder : MonoBehaviour
                 GetComponent<MeshRenderer>().material = GlueMat;
                 return;
             }
+        }
 
+        //bigger overlap for monitor
+        colliders = Physics.OverlapSphere(transform.position, 0.15f, 0xffff);
+        foreach (var c in colliders)
+        { 
             if ((c.gameObject == Monitor || c.transform.IsChildOf(Monitor.transform)) && glued)
             {
                 Monitor.transform.position = MonitorStartPos;

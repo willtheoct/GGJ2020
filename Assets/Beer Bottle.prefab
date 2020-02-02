@@ -54,6 +54,7 @@ GameObject:
   - component: {fileID: 5890175692610881541}
   - component: {fileID: 9021474230406154338}
   - component: {fileID: 1006134144978122910}
+  - component: {fileID: 5753677734725450007}
   m_Layer: 0
   m_Name: Beer Bottle
   m_TagString: Untagged
@@ -214,6 +215,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!65 &5753677734725450007
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5890175692610881542}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.02, y: 0.02, z: 0.02}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &5890175691986073480
 PrefabInstance:
   m_ObjectHideFlags: 0

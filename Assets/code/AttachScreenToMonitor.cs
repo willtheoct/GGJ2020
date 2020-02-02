@@ -9,7 +9,7 @@ public class AttachScreenToMonitor : MonoBehaviour
     public Transform myJoint;
 
     // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
         myJoint.position = monitorJoint.position;
         myJoint.rotation = monitorJoint.rotation;
