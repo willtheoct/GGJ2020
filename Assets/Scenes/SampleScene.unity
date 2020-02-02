@@ -161,10 +161,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13963242}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.003539999, y: 0.01665, z: 0.02489}
-  m_LocalScale: {x: 0.0012074069, y: 0.0003473712, z: 0.0012074073}
+  m_LocalPosition: {x: 0.003539999, y: 0.016649999, z: 0.02489}
+  m_LocalScale: {x: 0.001207407, y: 0.00034737136, z: 0.0012074077}
   m_Children: []
-  m_Father: {fileID: 542501159}
+  m_Father: {fileID: 1641732443}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!114 &13963244
@@ -3255,7 +3255,7 @@ Rigidbody:
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 5
   m_UseGravity: 1
   m_IsKinematic: 1
   m_Interpolate: 0
@@ -5789,7 +5789,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 963194225}
   Screen: {fileID: 36207975}
-  maxdistance: 0.31
+  maxdistance: 0.49
   ZoomSpeed: 0.02
 --- !u!4 &1004408928
 Transform:
@@ -8638,6 +8638,7 @@ Transform:
   m_Children:
   - {fileID: 1812075114}
   - {fileID: 36207976}
+  - {fileID: 13963243}
   m_Father: {fileID: 456721407}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9160,7 +9161,7 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: d5db0a9670ddd3849996419cbe6062ef,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: d5db0a9670ddd3849996419cbe6062ef,
         type: 3}
