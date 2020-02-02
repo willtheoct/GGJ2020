@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class NewBehaviourScript1 : MonoBehaviour
 {
-    public GameObject VicotryScreen;
-    public GameObject TitleScreen;
-    void OnMouseDown()
+    void Update()
     {
-        VicotryScreen.SetActive(false);
-        TitleScreen.SetActive(true);
+        if (Input.GetButtonDown("f12"))
+        {
+            Application.LoadLevel("SampleScene");
+        }
     }
 }
