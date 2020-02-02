@@ -9,7 +9,6 @@ public class StartinSafeMode : MonoBehaviour
     public GameObject ZoomOutToMontior;
     public GameObject Screen;
     public GameObject Smudge1;
-    public GameObject Background;
     void Update()
     {
         
@@ -21,6 +20,5 @@ public class StartinSafeMode : MonoBehaviour
         ZoomOutToMontior.SetActive(true);
         Smudge1.SetActive(true);
         Screen.SetActive(false);
-        Background.SetActive(true);
     }
 }

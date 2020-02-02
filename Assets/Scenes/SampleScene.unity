@@ -148,8 +148,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 13963242}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
-  m_LocalPosition: {x: 0.0019399557, y: 0.014259423, z: 0.024373852}
-  m_LocalScale: {x: 0.002097958, y: 0.002097959, z: 0.0020979587}
+  m_LocalPosition: {x: 0.00354, y: 0.01693, z: 0.02489}
+  m_LocalScale: {x: 0.0012074066, y: 0.00034737104, z: 0.001207407}
   m_Children: []
   m_Father: {fileID: 995591832}
   m_RootOrder: 3
@@ -1137,7 +1137,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 50bbd704aff4ca34fafc4b27ceb08094, type: 2}
+  - {fileID: 2100000, guid: a46c9a6d408ef7a4f9fc73c51cae3f7a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2572,7 +2572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MainCamera: {fileID: 963194225}
   Screen: {fileID: 36207975}
-  maxdistance: 0.496
+  maxdistance: 0.31
 --- !u!4 &1004408928
 Transform:
   m_ObjectHideFlags: 0
@@ -3889,7 +3889,6 @@ GameObject:
   - component: {fileID: 1435418585}
   - component: {fileID: 1435418584}
   - component: {fileID: 1435418583}
-  - component: {fileID: 1435418582}
   m_Layer: 0
   m_Name: Code Digit 1
   m_TagString: Untagged
@@ -3897,18 +3896,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1435418582
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435418581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94947af142de1cd4eb8072fee92bc5b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!64 &1435418583
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4546,7 +4533,6 @@ MonoBehaviour:
   ZoomOutToMontior: {fileID: 1004408926}
   Screen: {fileID: 36207975}
   Smudge1: {fileID: 1812075113}
-  Background: {fileID: 0}
 --- !u!64 &2106546181
 MeshCollider:
   m_ObjectHideFlags: 0
