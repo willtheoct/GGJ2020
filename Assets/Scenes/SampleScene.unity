@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.37311956, g: 0.38074014, b: 0.35872734, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.3807401, b: 0.35872734, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6032,6 +6032,7 @@ MonoBehaviour:
   - {fileID: 1153556604}
   mindistance: 0.46
   ZoomSpeed: 0.5
+  victoryScreen: {fileID: 1572568937}
 --- !u!1 &1086513487
 GameObject:
   m_ObjectHideFlags: 0
@@ -11096,11 +11097,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -90
       objectReference: {fileID: 0}
-    - target: {fileID: 671001397106358544, guid: c5cd4d8dc4d14c34883658251fc3c209,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: a8b7f4346a360964398fc09630f09e95, type: 2}
     - target: {fileID: 1274311162766394732, guid: c5cd4d8dc4d14c34883658251fc3c209,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -11111,6 +11107,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 1fd8445be53701947bc9efe2ed2b51f7, type: 2}
+    - target: {fileID: 671001397106358544, guid: c5cd4d8dc4d14c34883658251fc3c209,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a8b7f4346a360964398fc09630f09e95, type: 2}
     - target: {fileID: 7280891327364880728, guid: c5cd4d8dc4d14c34883658251fc3c209,
         type: 3}
       propertyPath: m_Mass
